@@ -3,12 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Leidy Tatiana Bolivar Heredia</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f3f3;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #b3e5fc, #a5bff6);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+
+        header .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .profile-photo {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%; /* Hace la foto redonda */
+            border: 5px solid #fff; /* Borde blanco */
+            object-fit: cover; /* Asegura que la imagen se ajuste bien */
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #e91e63;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .about,
+        .skills,
+        .contact {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skills li {
+            background-color: #f78bbd;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 30px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #f6a5c0;
+            color: white;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: #4CAF50; 
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            background-color: #45a049; /* Color al pasar el ratón */
+        }
+
+        nav ul li a:active {
+            background-color: #388e3c; /* Color cuando el enlace está activo */
+        }
+
+        /* Estilo para el contenedor de la imagen y el texto */
+        .acerca-de-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; /* Espacio entre la imagen y el texto */
+        }
+
+        .acerca-de-container img {
+            width: 200px; 
+            height: 200px; /* imagen tamaño*/
+            border-radius: 50%; /* Imagen redonda */
+            object-fit: cover;
+        }
+
+        .proyecto-contenedor {
+            background-color: white;
+            border-radius: 10px;
+             padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Estilo para la imagen del proyecto */
+            .proyecto-imagen {
+            width: 100%;
+            max-width: 500px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+/* Estilo para el texto */
+.proyecto p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+    </style>
 </head>
 <body>
-    <h1>¡Bienvenidos a mi página web!</h1>
-    <p>Esto es una página web simple.</p>
-    <script src="script.js"></script>
+    <header>
+        <div class="profile-container">
+            <!-- Imagen de perfil -->
+            <img src="foto.jpeg" alt="Foto de perfil" class="profile-photo">
+            <!-- Título debajo de la imagen -->
+            <h1>Leidy Tatiana Bolivar Heredia</h1>
+            <p>Hoja de Vida</p>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#acerca-de">Acerca de mi</a></li>
+            <li><a href="#servicios">Habilidades</a></li>
+            <li><a href="#Proyecto">Proyectos</a></li>
+            <li><a href="#Contáctame">Contáctame</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Acerca de mí -->
+        <section id="acerca-de">
+            <h2>Acerca de mí</h2>
+            <div class="acerca-de-container">
+                <img src="pruebas.jpg" alt="puesto">
+                <div class="about">
+                    <p>Soy estudiante de Ingeniería de Software, con experiencia en pruebas de calidad de Software. Técnicamente cuento con experiencia en pruebas funcionales y no funcionales, con conocimientos en automatización con Selenium. También manejo conocimientos técnicos en DevOps y Agile Testing, metodologías ágiles como Scrum, Kanban o metodologías propias del cliente. Mi objetivo es brindar soluciones innovadoras que aporten valor a las empresas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="servicios">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Java</li>
+                    <li>Selenium</li>
+                    <li>SQL</li>
+                    <li>JMater</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Proyecto">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <!-- Contenedor con fondo blanco y borde redondeado -->
+                <div class="proyecto-contenedor">
+                    <img src="spa.jpeg" alt="Imagen del proyecto" class="proyecto-imagen">
+                    <div class="about">
+                        <p>Beauty Care es una empresa dedicada a ofrecer lo mejor en productos de belleza, cuidado personal y bienestar. Creemos que cada persona merece sentirse increíble, por eso nos enfocamos en ofrecerte los mejores servicios de spa, tratamientos faciales, cuidados de la piel, y más. Con años de experiencia en la industria de la belleza, nos enorgullece brindar servicios personalizados que se adaptan a tus necesidades.</p>
+                    </div>
+                    <a href="https://leidybolivar.github.io/NuevaPagina/" target="_blank">
+                        <button class="button">Ver Proyecto</button>
+                    </a>
+                </div>
+            </div>
+        </section
+
+        <!-- Contáctame -->
+        <section id="contáctame">
+            <h2>Contacto</h2>
+            <div class="contact">
+                <p>Email: <a href="ltbolivar@ucompensar.edu.co">ltbolivar@ucompensar.edu.co</a></p>
+                <p>Teléfono: +57 301 372 7759</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 [Leidy Tatiana Bolivar Heredia]. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
